@@ -1,0 +1,11 @@
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.deps.json
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.runtimeconfig.json
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.runtimeconfig.dev.json
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.dll
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.pdb
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.csprojAssemblyReference.cache
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.csproj.CoreCompileInputs.cache
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.AssemblyInfoInputs.cache
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.AssemblyInfo.cs
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.dll
+/Users/default/CarriageOkie/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.pdb
