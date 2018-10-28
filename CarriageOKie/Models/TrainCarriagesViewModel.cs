@@ -20,6 +20,13 @@ namespace CarriageOKie.Models
     {
         public string Genre { get; set; }
 
-        public List<string> Songs { get; set; }        
+        public List<Song> Songs { get; set; }        
+    }
+
+    public class Song
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
     }
 }

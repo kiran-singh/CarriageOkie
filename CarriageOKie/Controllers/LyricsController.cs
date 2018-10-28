@@ -22,10 +22,10 @@ namespace CarriageOKie.Controllers
         /// </summary>
         /// <returns>The index.</returns>
         [HttpGet]
-        [Route("/lyrics/{trainId}/{carriage}/{song}")]
-        public ActionResult Index(int trainId, string carriage, string song)
+        [Route("/lyrics/{trainId}/{carriage}/{songId}")]
+        public ActionResult Index(int trainId, string carriage, int songId)
         {
-            return View(_genreSongsService.Get(song));
+            return View(_genreSongsService.Get(songId));
         }
     }
 }
