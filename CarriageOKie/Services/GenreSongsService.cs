@@ -10,19 +10,19 @@ namespace CarriageOKie.Services
     {
         IList<GenreSongsViewModel> Get();
         
-        PopularSongViewModel Get(string song);
+        PopularSongViewModel Get(int songId);
     }
 
     public class GenreSongsService : IGenreSongsService
     {
         private const string PathSongs = "wwwroot/songs";
         private readonly Random _random = new Random();
-        private static readonly List<string> PopularSongs = new List<string>
+        private static readonly List<int> PopularSongsIds = new List<int>
         {
-            "Manic Monday (The Bangles)",
-            "Train Of Love (Johnny Cash)",
-            "The Weekend (SZA)",
-            "Born To Be Wild (Steppenwolf)",
+            209273,
+            306354,
+            503751,
+            805869,
         };
 
         public IList<GenreSongsViewModel> Get()
@@ -34,31 +34,33 @@ namespace CarriageOKie.Services
                 Genre = x.Replace(PathSongs, null).Replace("/", null),
                 Songs = Directory.EnumerateFiles(x, "*.txt").Select(y =>
                 {
-                    var items = y.Split(new[] {'/', '.'});
-                    return items[items.Length - 2];
+                    var items = y.Split('-', '/', '.');
+                    return new Song
+                    {
+                        Id = items[items.Length - 3].ToInt(),
+                        Name = items[items.Length - 2]
+                    };
                 }).ToList(),
-            }).ToList();
+            }).OrderBy(x => x.Genre).ToList();
             
             return genreSongsViewModels;
         }
 
-        public PopularSongViewModel Get(string song)
+        public PopularSongViewModel Get(int songId)
         {
-            var favourite = PopularSongs.Contains(song) ? song : PopularSongs[_random.Next(0, PopularSongs.Count)];
+            var favourite = PopularSongsIds.Contains(songId)
+                ? songId
+                : PopularSongsIds[_random.Next(0, PopularSongsIds.Count)];
 
-            var message = PopularSongs.Contains(song)
-                ? $"You chose <b>{song}</b> which is currently most in demand in your train carriage.<br/> If you'd like to sing it please click Lyrics button to get lyrics for the song."
-                : $"You chose <emp>{song}</emp> but the current favourite is <b>{favourite}</b> in your train carriage.<br/> If you'd like to sing it please click Lyrics button to see the lyrics for the song.";
-
-            var songs = Directory.EnumerateFiles(PathSongs, "*.txt", SearchOption.AllDirectories);
-            var selectedSong =
-                songs.FirstOrDefault(x => x.IndexOf(song, StringComparison.CurrentCultureIgnoreCase) >= 0);
+            var songs = Directory.EnumerateFiles(PathSongs, "*.txt", SearchOption.AllDirectories).ToList();
+            
+            var selectedSong = songs.FirstOrDefault(x => x.Contains(favourite.ToString()));
 
             var popularSongViewModel = new PopularSongViewModel
             {
                 Lyrics = File.ReadLines(selectedSong),
-                Favourite = favourite,
-                Song = song,
+                Favourite = songs.SongFrom(favourite),
+                Song = songs.SongFrom(songId),
             };
             
             return popularSongViewModel;

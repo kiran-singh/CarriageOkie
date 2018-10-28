@@ -43,7 +43,7 @@
                         @foreach (var song in Model.GenreSongsViewModels[i].Songs)
                         {
                             <li class="list-group-item">
-                                <a href="#">@song</a>
+                                <a data-song-id="@song.Id" href="#">@song.Name</a>
                             </li>
                         }
                     </ul>
@@ -67,7 +67,7 @@
         function setLinks() {
             $('.list-group-item a').each(function() {
                 var item = this;
-                item.href = '/lyrics/' + $('#train').val() + '/' + $('#carriage').val() + '/' + item.innerText;
+                item.href = '/lyrics/' + $('#train').val() + '/' + $('#carriage').val() + '/' + item['dataset']["songId"];
             });
         }
     </script>
