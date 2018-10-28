@@ -1,27 +1,44 @@
-﻿<script type="text/javascript" src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"> </script>
-<img src="http://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuXW">
-
-@model CarriageOKie.Models.PopularSongsViewModel
+﻿@model PopularSongViewModel
 
 @{
     ViewData["Title"] = "Lyrics";
 }
 
-<ul class="list-group">
+<h2>And the chosen one is...</h2>
 
+@if (Model.Favourite == Model.Song)
+{
+    <p>
+        You chose <b>@Model.Song</b> which is currently most in demand in your train carriage.<br/> If you'd like to sing it please click Lyrics button to get lyrics for the song.
+    </p>
+}
+else
+{
+    <p>
+        You chose <em>@Model.Song</em> but the current favourite in your train carriage is <b>@Model.Favourite</b>.<br/> If you'd like to sing it please click Lyrics button to see the lyrics for the song.
+    </p>
+}
 
-    @for (int idx = 0; idx < Model.PopularSongsList.Count; idx++)
-    {
-
-        @Html.HiddenFor(x => Model.PopularSongsList[idx].ID)
-
-        <li class="list-group-item"> @Html.DisplayFor(x => Model.PopularSongsList[idx].SongName, new { value = Model.PopularSongsList[idx].SongName })</li>
-        @Html.HiddenFor(x => Model.PopularSongsList[idx].SongName)
-
-
-    }
-</ul>
-    <button class="btn btn-primary" id="btnSave">Sing</button>
+<button class="btn btn-primary" id="toggleLyrics">Lyrics</button>
 <div id="lyrics">
+    <p>
+        @foreach (var line in Model.Lyrics)
+        {
+            @line<br/>
+        }
+    </p>
 </div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        $(function() {
+            $('#lyrics').hide();
+            
+            $('#toggleLyrics').click(function() {
+                $('#lyrics').toggle();
+            });
+        });
+    </script>
+}
 
