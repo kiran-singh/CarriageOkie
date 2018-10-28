@@ -1,19 +1,20 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/js/Lyrics.js">
+﻿<Properties StartupConfiguration="{C1FA67F8-5A1E-4B71-9276-48AAE5CD321B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
     <Files>
       <File FileName="Program.cs" Line="17" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="9" Column="2" />
       <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Startup.cs" Line="34" Column="17" />
+      <File FileName="Startup.cs" Line="34" Column="14" />
       <File FileName="Models/PopularSongsViewModel.cs" Line="8" Column="51" />
       <File FileName="Models/PopularSongs.cs" Line="9" Column="2" />
-      <File FileName="wwwroot/js/Lyrics.js" Line="15" Column="1" />
+      <File FileName="wwwroot/js/Lyrics.js" Line="13" Column="5" />
       <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="Controllers/LyricsController.cs" Line="7" Column="1" />
       <File FileName="Views/Lyrics/Index.cshtml" Line="3" Column="1" />
       <File FileName="bundleconfig.json" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CarriageOKie PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

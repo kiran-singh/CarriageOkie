@@ -17,4 +17,48 @@
     <ItemGroup>
       <Folder Include="Views\Lyrics\" />
     </ItemGroup>
+    <ItemGroup>
+      <Content Remove="wwwroot\css\font-awesome.min.css" />
+      <Content Remove="wwwroot\css\main.css" />
+      <Content Remove="wwwroot\js\breakpoints.min.js" />
+      <Content Remove="wwwroot\js\browser.min.js" />
+      <Content Remove="wwwroot\js\main.js" />
+      <Content Remove="wwwroot\js\util.js" />
+      <Content Remove="wwwroot\images\avatar.jpg" />
+      <Content Remove="wwwroot\images\logo.jpg" />
+      <Content Remove="wwwroot\images\pic01.jpg" />
+      <Content Remove="wwwroot\images\pic02.jpg" />
+      <Content Remove="wwwroot\images\pic03.jpg" />
+      <Content Remove="wwwroot\images\pic04.jpg" />
+      <Content Remove="wwwroot\images\pic05.jpg" />
+      <Content Remove="wwwroot\images\pic06.jpg" />
+      <Content Remove="wwwroot\images\pic07.jpg" />
+      <Content Remove="wwwroot\images\pic08.jpg" />
+      <Content Remove="wwwroot\images\pic09.jpg" />
+      <Content Remove="wwwroot\images\pic10.jpg" />
+      <Content Remove="wwwroot\images\pic11.jpg" />
+      <Content Remove="wwwroot\images\pic12.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="wwwroot\css\font-awesome.min.css" />
+      <None Include="wwwroot\css\main.css" />
+      <None Include="wwwroot\js\breakpoints.min.js" />
+      <None Include="wwwroot\js\browser.min.js" />
+      <None Include="wwwroot\js\main.js" />
+      <None Include="wwwroot\js\util.js" />
+      <None Include="wwwroot\images\avatar.jpg" />
+      <None Include="wwwroot\images\logo.jpg" />
+      <None Include="wwwroot\images\pic01.jpg" />
+      <None Include="wwwroot\images\pic02.jpg" />
+      <None Include="wwwroot\images\pic03.jpg" />
+      <None Include="wwwroot\images\pic04.jpg" />
+      <None Include="wwwroot\images\pic05.jpg" />
+      <None Include="wwwroot\images\pic06.jpg" />
+      <None Include="wwwroot\images\pic07.jpg" />
+      <None Include="wwwroot\images\pic08.jpg" />
+      <None Include="wwwroot\images\pic09.jpg" />
+      <None Include="wwwroot\images\pic10.jpg" />
+      <None Include="wwwroot\images\pic11.jpg" />
+      <None Include="wwwroot\images\pic12.jpg" />
+    </ItemGroup>
 </Project>

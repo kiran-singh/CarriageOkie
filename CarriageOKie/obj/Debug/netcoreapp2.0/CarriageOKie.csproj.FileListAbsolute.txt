@@ -19,3 +19,14 @@
 /Users/kiran/RiderProjects/CarriageOKie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.AssemblyInfo.cs
 /Users/kiran/RiderProjects/CarriageOKie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.dll
 /Users/kiran/RiderProjects/CarriageOKie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.pdb
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.csprojAssemblyReference.cache
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.csproj.CoreCompileInputs.cache
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.AssemblyInfoInputs.cache
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.AssemblyInfo.cs
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.dll
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/obj/Debug/netcoreapp2.0/CarriageOKie.pdb
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.deps.json
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.runtimeconfig.json
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.runtimeconfig.dev.json
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.dll
+/Users/default/Hack2018/CarriageOkie/CarriageOKie/bin/Debug/netcoreapp2.0/CarriageOKie.pdb
